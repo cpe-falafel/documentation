@@ -43,6 +43,7 @@
 | En tant qu'administrateur des systèmes d'information, je veux pouvoir consulter les détails des flux vidéos traités par un worker spécifique pour une analyse détaillée.                    |          |                        |
 | En tant qu'administrateur de flux, je veux pouvoir ajouter des macros (ensemble de filtres appliqués comme un seul filtre).                                                                 |          |                        |
 | En tant qu'administrateur des systèmes d'information, je veux pouvoir déclarer les filtres disponibles pour coder mes propres filtres au besoin                                             |          |                        |
+| En tant qu'administrateur de flux, je veux pouvoir continuer mes modifications hors ligne                                                                                                   |          |                        |
 
 
 
