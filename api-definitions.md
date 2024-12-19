@@ -185,9 +185,83 @@ interface CommitFluxDTO{
 
 # User Manager
 ## User
-TODO
+```ts
+interface UserModel {
+    login: string,
+    creationDate: Date,
+    email: string,
+    groupUid : uid
+}
+```
+
+### GET /user/
+```ts
+interface UserListDTO{
+    values: {login: string, creationDate: Date, email: string, groupUid : uid}[]
+}
+```
+
+### GET /user/{login}
+```ts
+interface UserDTO{
+    login: string,
+    creationDate: Date,
+    email: string,
+    groupUid : uid
+}
+```
+
+### POST /user/
+```ts
+interface UserDTO{
+    login: string,
+    email: string,
+    password: string
+}
+```
+### Delete /user/{login}
+
+
 ## Group
-TODO
+
+```ts
+interface GroupModel {
+    uid: string,
+    name: string,
+    users: User[]
+}
+```
+
+### GET /group/
+```ts
+interface groupListDTO{
+    values: {uid: string, name: string,users: string[]}[]
+}
+```
+
+### GET /group/{uid}
+```ts
+interface GroupDTO{
+    uid: string,
+    name: string,
+    users: string[]
+}
+```
+
+### POST /group/
+```ts
+interface GroupDTO{
+    uid: string,
+    name: string
+}
+```
+
+### POST /group/{uid}/addUser/{login}
+
+### POST /group/{uid}/deleteUser/{login}
+
+### Delete /group/{uid}
+
 
 # Worker API (.NET)
 ### GET /health
