@@ -1,6 +1,11 @@
 # Documentation
 
-[_TOC_]
+- [API Contracts](#api-contracts)
+- [Technologies](#technologies)
+- [User Stories](#user-stories)
+- [Architecture](#architecture)
+- [Data Model](#data-model)
+
 
 ## Api contracts 
 
