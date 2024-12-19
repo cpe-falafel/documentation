@@ -95,7 +95,7 @@ We may filter type\
 ```ts
 interface WorkerModel {
     uid: string,
-    owner: string,
+    group: string,
     lastUpdate: Date, //last configuration update
     configurationValue: string,
     uri: string, //worker url
