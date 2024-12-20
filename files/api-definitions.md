@@ -4,14 +4,14 @@
 interface FluxModel {
     uid: string, //uuid
     name: string,
-    owner: string, //group
+    group: string, //group
     value: string, //json with configuration
     resourceDependencies: string[], //resources paths,
     lastEdited: Date //use a timestamp for http
 }
 ```
 
-### GET /flux?owner={group}
+### GET /flux?group={group}
 * Access: user
 
 `--`
@@ -29,7 +29,7 @@ interface FluxListDTO {
 interface SingleFluxDTO {
     uid: string,
     name: string,
-    owner: string, 
+    group: string, 
     value: string,
     resourceDependencies: string[],
     lastEdited: number
@@ -41,7 +41,7 @@ interface SingleFluxDTO {
 
 ```ts
 interface CreateFluxDTO {
-    owner: string,
+    group: string,
     name: string
 }
 ```
