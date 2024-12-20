@@ -106,7 +106,7 @@ interface WorkerModel {
 }
 ```
 
-### GET /worker?owner={group}
+### GET /worker?group={group}
 * Access: user
 
 `--`
@@ -123,7 +123,7 @@ interface WorkerListDTO{
 ```ts
 interface SingleWorkerDTO{
     uid: string,
-    owner: string,
+    group: string,
     lastUpdate: number,
     configurationValue: string,
     previewUri?: string,
@@ -142,7 +142,7 @@ interface SingleWorkerDTO{
 
 ```ts
 interface CreateWorkerDTO{
-    owner: string,
+    group: string,
     uri: string,
     apiKey?: string,
     previewUri?: string,
